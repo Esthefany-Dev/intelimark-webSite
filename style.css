@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu-inicial{
+    background-color: rgb(21, 0, 179);
+    padding: 2%;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: center;
+}
+/*-----------------------------------------------------*/
+.main-intro{
+    width: 100vw;                                           
+    height: 80vh;                                         
+    background-color: #cee0ff;                            
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-intro{
+    width:35vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: justify;
+    font-weight: bold;
+    color: rgb(21, 0, 179);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.left-intro button{
+    background-color: rgb(21, 0, 179);
+    width: 35vw;
+    margin-top: 3%;
+}
+.left-intro-img{
+    padding: 10%;
+    width: 40vw;
+}
+.right-intro{
+    width:25vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------*/
+
+.main-servicos{
+    width: 100vw;                                           
+    height: 155vh;                                         
+    background-color: #ffffff;                            
+}
+.main-servicos h2, .main-sobre-nos h2, .main-clientes h2{
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color:  rgb(21, 0, 179);
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.main-servicos-cards h5{
+    text-align: center;
+}
+.main-servicos-cards p{
+    text-align: center;
+}
+.servicos-card-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+.servicos-card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+/*---------------------------------------------------------------*/
+.main-sobre-nos{
+    width: 100vw;                                           
+    height: 50vh;                                         
+    background-color: #cee0ff;    
+}
+.main-sobre-nos-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-sobre-nos h2{
+    color: rgb(21, 0, 179);
+    padding-top: 4%;
+}
+.main-sobre-nos p{
+    width: 65vw;
+    text-align: justify;
+}
+#btn-contato{
+    border: 1px solid rgb(21, 0, 179);
+    color: rgb(21, 0, 179)
+}
+#btn-contato:hover {
+    background-color: rgb(21, 0, 179);
+    border: rgb(21, 0, 179);
+    color: #fff;
+}
+/*---------------------------------------------------------------------------*/
+.main-conquistas{
+    width: 100vw;                                           
+    height: 35vh;                                         
+    background-color: #fff;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.main-conquistas-indv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.main-conquistas-indv img{
+    width: 20%;
+}
+/*-------------------------------------------------------------------------------*/
+.main-clientes{
+    width: 100vw;                                           
+    height: 90vh;                                         
+    background-color: #cee0ff;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-clientes h2{
+    color: rgb(21, 0, 179);
+    padding: 2%;
+   
+}
+.main-clientes-text{
+    background-color: #e4eefe;
+    width: 60vw;
+    padding: 2%;
+    border-radius: 20px;
+    text-align: justify;
+}
+/*-----------------------------------------------------------------------------*/
+footer{
+    width: 100vw;                                           
+    height: 33vh;                                         
+    background-color: #070b42;   
+    color: #fff;             
+}
+footer h5{
+    font-family:'Kanit', sans-serif;  
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2%;         
+}
+.footer-endereco{
+    text-align: center;
+}
+.footer-endereco p{
+    font-weight: 500;
+    color: rgb(189, 209, 255);
+    margin: 1.5%;
+}
+.footer-contato{
+    text-align: center;
+}
+.footer-contato img{
+    width: 3%;
+    margin: 4px;
+}
+.footer-contato img:hover{
+    transition: 0.4s;
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+.footer-creditos{
+    text-align: center;
+    font-weight: bold;
+    color: #3e45a5;
+}
+/*---------------------------------------------------------------------------*/
+@media(max-width:1400px){
+    .main-servicos{
+        height: 170vh;                                         
+    }
+    .main-clientes{
+        height: 100vh;                                         
+    } 
+}
+@media(min-width:992px){
+    .main-intro{
+        height: 85vh;
+    }
+}
+@media(max-width:971px){
+    .main-sobre-nos{
+        height: 60vh;
+    }
+    .main-clientes{
+        height: 110vh;
+    }
+}
+@media(max-width:635px){
+    .main-intro{
+        width: 100vw;
+    }
+    .left-intro{
+        font-size: 120%;
+        width: 50vw;
+    }
+
+    .main-servicos{
+        width: 100vw;
+        height: 490vh;  
+    }
+    .servicos-card-top, .servicos-card-bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin-top: 5%;
+    }
+    .main-sobre-nos{
+        height: 83vh;
+    }
+    .main-conquistas-indv{
+        width: 25vw;
+        text-align: center;
+    }
+    .main-conquistas-indv img{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .main-clientes{
+        height: 145vh;
+    }
+    .main-clientes-text{
+        width: 75vw;
+        padding: 2%;
+    }
+    .footer-contato img{
+        width: 6vw;
+    }
+    .footer-endereco{
+        padding-top: 25px;
+        font-size: 15px;
+    }
+
+}
+@media(max-width:450px){
+    .main-intro{
+        flex-direction: column; 
+        font-size: 12px;  
+        padding-top: 20px;
+    }
+    .left-intro button{
+        width: 20vw;
+        height: 5vh;
+        font-size: 12px;
+        margin: 10px;
+    }
+    .left-intro-img{
+      width: 70vw;
+    }
+   .main-sobre-nos{
+      height: 60vh;
+   }
+   .main-sobre-nos-text{
+    width: 100vw;
+    font-size: 13.5px;
+   }
+   .main-sobre-nos-text p{
+    width: 90vw;
+   }
+   .main-sobre-nos button{
+    width: 30vw;
+    height: 5vh;
+    font-size: 13.5px;
+   }
+   .main-conquistas-indv img{
+    width: 30%;
+   }
+   .main-clientes{
+      height: 110vh;
+   }
+   .main-clientes-text{
+    width: 85vw;
+    font-size: 13.5px;
+   }
+  
+}
+
+@media(max-width:400px){
+    .left-intro{
+        width: 70vw;
+    }
+    .main-sobre-nos button{
+        width: 35vw;
+    }
+    .main-conquistas-indv img{
+        width: 10vw;
+    }
+    .main-clientes{
+        height: 110vh;
+     }
+     .main-clientes-text{
+      width: 85vw;
+      font-size: 12px;
+     }
+}
+
+@media(max-width:350px){
+    .main-intro{
+        background-color: green;
+    }
+    .left-intro button{
+        width: 25vw;
+    }
+    .main-sobre-nos{
+        height: 70vh;
+    }
+    .main-clientes{
+        height: 120vh;
+    }
+    .footer-contato img{
+        width: 10vw;
+    }
+    .footer-endereco{
+        padding-top: 25px;
+        font-size: 12px;
+    }
+}
